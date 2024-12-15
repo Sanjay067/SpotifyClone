@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main"> 
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house" style="color: white; font-size: 20PX;"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library"> 
+                <div class="options">
+                    <div class="lib-option">
+                        <img src="./assets/library_icon.png" alt="lib-logo">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>    
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="sticky-nav">
+                <div class="arrows" style="position: relative; top: 1.5rem;">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-buttons">
+                    <button class="badge nav-badge premium hide" style="background-color: #fff;">Explore Premium</button>
+                    <button class="badge nav-badge" style="background-color: #000; color: #fff;">
+                        <i class="fa-solid fa-download dowload-icon"></i>Install App
+                    </button>
+                    <i class="fa-solid fa-user" id="nav-user-icon"></i>
+                </div>
+            </div>
+            <div class="main-contentiner">
+                <h2>Recently played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Top 50-Global</p>
+                        <p class="card-p text" style="opacity: 0.5;">Your daily updates of most played...</p>
+                    </div>
+                </div>
+
+                <h2 style="font-weight: 600;">Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Mayiye Jinne Sohna</p>
+                        <p class="card-p text" style="opacity: 0.5;">Darshan Raval</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Pasoori Nu(From "S..</p>
+                        <p class="card-p text" style="opacity: 0.5;">Arjith Singh, Rochak Kohli, Tulsi Kumar</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Naa Ready(From "L...</p>
+                        <p class="card-p text" style="opacity: 0.5;">Anirudh Ravichander,Thalapathy Vijay, Asal...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Pasoori Nu(From "S..</p>
+                        <p class="card-p text" style="opacity: 0.5;">Arjith Singh, Rochak Kohli, Tulsi Kumar</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Top 50-Global</p>
+                        <p class="card-p text" style="opacity: 0.5;">Your daily updates of most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Pasoori Nu(From "S..</p>
+                        <p class="card-p text" style="opacity: 0.5;">Arjith Singh, Rochak Kohli, Tulsi Kumar</p>
+                    </div>
+                </div>
+
+                <h2 style="font-weight: 600;">Featured charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Top 50-Global</p>
+                        <p class="card-p text" style="opacity: 0.5;">Your daily updates of most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Top 50-India</p>
+                        <p class="card-p text" style="opacity: 0.5;">Your daily updates of most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="img-card">
+                        <p class="card-p head" style="font-weight: 600;">Top 50-Global</p>
+                        <p class="card-p text" style="opacity: 0.5;">Your daily updates of most played...</p>
+                    </div>
+                   
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+        
+            <div class="music_player">
+                <div class="album">
+                    <div><img src="assets\card2img.jpeg" class="curr_play"></div>
+                    <div class="play_name" style="color: white;"> 
+                        <span class="   ">Daylight</span>
+                        <br>
+                        <span class="play_span2">David Kushanar</span>
+                    </div>
+                    <div class="like_img"><img src="assets\heart.png" class="like_play"></div>
+                    <div class="picinpic"><img src="assets\picinpic.png" class="picinpic_play"></div>
+                </div>
+                <div class="player">
+                  <div class="player_controls">
+                    <div class="control_icons">
+                    <img src="assets\player_icon1.png"  class="control_img  other_controls" >
+                    <img src="assets\player_icon2.png"  class="control_img other_controls">
+                    <img src="assets\player_icon3.png"  class="control_img play">
+                    <img src="assets\player_icon4.png"  class="control_img other_controls">
+                    <img src="assets\player_icon5.png"  class="control_img other_controls" >
+                    </div>
+                    <div class="playback_bar">
+                        <span class="curr-time">0:00</span>
+                        <input type="range" min="0" max="100" class="progress-bar" step="1">
+                        <span class="tot-time">3:02</span>
+                      </div>
+                  </div>
+                  
+                  
+                </div>
+                <div class="controls"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
